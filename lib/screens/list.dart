@@ -136,8 +136,9 @@ style: ElevatedButton.styleFrom(
   }
 
   void _deleteToDoItem(String id) {
+      setState((){
   todosList.removeWhere((item) => item.id == id);
-  } 
+  });
 
    void _addToDoItem(String toDo) {
     setState(() {
