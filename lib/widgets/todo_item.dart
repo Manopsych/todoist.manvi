@@ -20,6 +20,7 @@ class ToDoItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: ListTile(
+        margin: EdgeInsets.only(top: 10,bottom: 10),
         onTap: () {
          onToDoChanged(todo);
         },
